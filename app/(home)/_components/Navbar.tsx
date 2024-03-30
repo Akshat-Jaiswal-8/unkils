@@ -29,7 +29,7 @@ export const Navbar = () => {
           alexBrush.className,
         )}
       >
-        <div className={"text-3xl"}>{"Unkils"}</div>
+        <span className={"text-3xl"}>{"Unkils"}</span>
       </div>
 
       <div className={cn(poppins.className)}>

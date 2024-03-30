@@ -9,6 +9,7 @@ import {
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 const inter = Inter({ subsets: ["latin"] });
+import { Toaster } from "@/components/ui/sonner";
 
 // FONTS :
 const poppins = Poppins({
@@ -50,7 +51,8 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <main>{children}</main>
+          <Toaster />
         </ThemeProvider>
       </body>
     </html>
